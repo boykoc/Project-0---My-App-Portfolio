@@ -1,0 +1,27 @@
+<resources>
+    <color name="custom_theme_primary_color_500">#607D8B</color>
+    <color name="custom_theme_primary_color_700">#455A64</color>
+    <color name="custom_theme_primary_accent">#FFAB40</color>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/custom_theme_primary_color_500</item>
+        <item name="colorPrimaryDark">@color/custom_theme_primary_color_700</item>
+        <!-- Get My custom buttons styles applied to all buttons in the app -->
+        <item name="android:buttonStyle">@style/MyButtons</item>
+    </style>
+
+    <!-- My Button styles -->
+    <style name="MyButtons"
+        parent="@android:style/Widget.Button">
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">@color/custom_theme_primary_color_500</item>
+        <item name="android:textSize">16dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+</resources>

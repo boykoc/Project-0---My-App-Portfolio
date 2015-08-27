@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="custom_theme_primary_color_500">#607D8B</color>
+    <color name="custom_theme_primary_color_700">#455A64</color>
+    <color name="custom_theme_primary_accent">#FFAB40</color>
+    <!-- The theme applied to the application or activity
+         This approach to allow backward compatibility for pre-v21 devices is
+         from the developer documentation on the android website. -->
+    <style name="CustomTheme" parent="@android:style/Theme.Material.Light.DarkActionBar">
+        <!-- really starting to love the developer docs for android -->
+        <!-- Main theme colors -->
+        <!--   Color for the app bar -->
+        <item name="android:colorPrimary">@color/custom_theme_primary_color_500</item>
+        <!--   Darker variant for the status bar and contextual app bars -->
+        <item name="android:colorPrimaryDark">@color/custom_theme_primary_color_700</item>
+        <!-- Get My custom buttons styles applied to all buttons in the app -->
+        <item name="android:buttonStyle">@style/MyButtons</item>
+    </style>
+
+    <!-- My Button styles -->
+    <style name="MyButtons" parent="@android:style/Widget.Button">
+        <item name="android:elevation">4dp</item>
+        <item name="android:textSize">16dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+</resources>
